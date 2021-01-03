@@ -9,8 +9,8 @@ public class Main {
         String[] jobRequirements = {"Java", "Python"};
         test.setJobRequirements(jobRequirements);
 
-        test.registerNewGrad("Naama", "Gesser", "Java");
-        test.registerNewGrad("Emerenc", "Szeredás", "Python");
+        test.registerNewGrad("Example", "Two", new String[]{"Java", "Python"});
+        test.registerNewGrad("Example", "One", new String[]{"Python"});
 
         while(!test.loggedIn){    //keeps program in log-in mode, allows multiple log-ins
             test.sheCodesLogin();
